@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Banking Dashboard | Careerphi</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Dashboard</h1>
+        <div class="balance-section">
+            <p class="balance-label">Current Balance:</p>
+            <p id="balance" class="balance">$1,000</p>
+        </div>
+        <div class="transaction-section">
+            <div class="transaction">
+                <label for="deposit-amount" class="amt">Deposit Amount:</label>
+                <div class="user-input">
+                    <input type="number" id="deposit-amount" placeholder="Enter amount" />
+                    <button onclick="deposit()">Deposit</button>
+                </div>
+                
+            </div>
+            <div class="transaction">
+                <label for="withdraw-amount" class="amt">Withdrawal Amount:</label>
+                <div class="user-input">
+                    <input type="number" id="withdraw-amount" placeholder="Enter amount" />
+                    <button onclick="withdraw()">Withdraw</button>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <p>Contact us: <a href="mailto:bank.name@bank.com">bank.name@bank.com</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
